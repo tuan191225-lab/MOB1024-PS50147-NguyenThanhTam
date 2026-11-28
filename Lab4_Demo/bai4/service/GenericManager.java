@@ -16,6 +16,10 @@ public class GenericManager<T> {
     }
 
     public int size() {
+        if (items.isEmpty()) {
+            System.out.println("=> Danh sách đang trống.");
+            return 0;
+        }
         return items.size();
     }
 
